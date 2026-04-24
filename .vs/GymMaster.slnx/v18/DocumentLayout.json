@@ -1,18 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Team_Project\\GymMaster\\",
+  "WorkspaceRootPath": "D:\\Team_Project\\Gym Master\\Gym_Master\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|d:\\team_project\\gymmaster\\gymmaster\\utilities\\datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|d:\\team_project\\gym master\\gym_master\\gymmaster\\utilities\\datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|solutionrelative:gymmaster\\utilities\\datastorage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|d:\\team_project\\gymmaster\\gymmaster\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|solutionrelative:gymmaster\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|D:\\Team_Project\\Gym Master\\Gym_Master\\gymmaster\\views\\login_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|solutionrelative:gymmaster\\views\\login_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|d:\\team_project\\gymmaster\\gymmaster\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|solutionrelative:gymmaster\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|d:\\team_project\\gym master\\gym_master\\gymmaster\\views\\login_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|solutionrelative:gymmaster\\views\\login_form.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|d:\\team_project\\gym master\\gym_master\\gymmaster\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|solutionrelative:gymmaster\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|D:\\Team_Project\\Gym Master\\Gym_Master\\gymmaster\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|solutionrelative:gymmaster\\views\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|d:\\team_project\\gym master\\gym_master\\gymmaster\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|solutionrelative:gymmaster\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|d:\\team_project\\gym master\\gym_master\\gymmaster\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{61E08F0E-5590-E7E0-1C5F-48A67E7ACDEF}|GymMaster\\GymMaster.csproj|solutionrelative:gymmaster\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,15 +38,78 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "GymMaster\\Views\\MainForm.cs",
+              "ToolTip": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Views\\MainForm.cs",
+              "RelativeToolTip": "GymMaster\\Views\\MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T13:36:34.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MainForm.cs [Design]",
+              "DocumentMoniker": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Views\\MainForm.cs",
+              "RelativeDocumentMoniker": "GymMaster\\Views\\MainForm.cs",
+              "ToolTip": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Views\\MainForm.cs [Design]",
+              "RelativeToolTip": "GymMaster\\Views\\MainForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T13:32:31.415Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Program.cs",
+              "RelativeDocumentMoniker": "GymMaster\\Program.cs",
+              "ToolTip": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Program.cs",
+              "RelativeToolTip": "GymMaster\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T13:02:22.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login_Form.cs",
+              "DocumentMoniker": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Views\\Login_Form.cs",
+              "RelativeDocumentMoniker": "GymMaster\\Views\\Login_Form.cs",
+              "ToolTip": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Views\\Login_Form.cs",
+              "RelativeToolTip": "GymMaster\\Views\\Login_Form.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T12:17:05.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login_Form.cs [Design]",
+              "DocumentMoniker": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Views\\Login_Form.cs",
+              "RelativeDocumentMoniker": "GymMaster\\Views\\Login_Form.cs",
+              "ToolTip": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Views\\Login_Form.cs [Design]",
+              "RelativeToolTip": "GymMaster\\Views\\Login_Form.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-24T12:11:29.081Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "DataStorage.cs",
-              "DocumentMoniker": "D:\\Team_Project\\GymMaster\\GymMaster\\Utilities\\DataStorage.cs",
+              "DocumentMoniker": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Utilities\\DataStorage.cs",
               "RelativeDocumentMoniker": "GymMaster\\Utilities\\DataStorage.cs",
-              "ToolTip": "D:\\Team_Project\\GymMaster\\GymMaster\\Utilities\\DataStorage.cs",
+              "ToolTip": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Utilities\\DataStorage.cs",
               "RelativeToolTip": "GymMaster\\Utilities\\DataStorage.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -39,28 +118,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Member.cs",
-              "DocumentMoniker": "D:\\Team_Project\\GymMaster\\GymMaster\\Models\\Member.cs",
+              "DocumentMoniker": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Models\\Member.cs",
               "RelativeDocumentMoniker": "GymMaster\\Models\\Member.cs",
-              "ToolTip": "D:\\Team_Project\\GymMaster\\GymMaster\\Models\\Member.cs",
+              "ToolTip": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\Models\\Member.cs",
               "RelativeToolTip": "GymMaster\\Models\\Member.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-15T15:19:04.446Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Form1.cs [Design]",
-              "DocumentMoniker": "D:\\Team_Project\\GymMaster\\GymMaster\\Form1.cs",
-              "RelativeDocumentMoniker": "GymMaster\\Form1.cs",
-              "ToolTip": "D:\\Team_Project\\GymMaster\\GymMaster\\Form1.cs [Design]",
-              "RelativeToolTip": "GymMaster\\Form1.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-15T15:01:59.516Z",
-              "EditorCaption": " [Design]"
             }
           ]
         }

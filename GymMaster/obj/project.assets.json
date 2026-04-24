@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Team_Project\\GymMaster\\GymMaster\\GymMaster.csproj",
+      "projectUniqueName": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\GymMaster.csproj",
       "projectName": "GymMaster",
-      "projectPath": "D:\\Team_Project\\GymMaster\\GymMaster\\GymMaster.csproj",
+      "projectPath": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\GymMaster.csproj",
       "packagesPath": "C:\\Users\\Amr\\.nuget\\packages\\",
-      "outputPath": "D:\\Team_Project\\GymMaster\\GymMaster\\obj\\",
+      "outputPath": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
