@@ -8,24 +8,19 @@
     "net10.0-windows": []
   },
   "packageFolders": {
-    "C:\\Users\\Amr\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\HP ZBOOK G6\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\GymMaster.csproj",
+      "projectUniqueName": "D:\\ME\\pro\\cmder\\project\\Gym_Master\\GymMaster\\GymMaster.csproj",
       "projectName": "GymMaster",
-      "projectPath": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\GymMaster.csproj",
-      "packagesPath": "C:\\Users\\Amr\\.nuget\\packages\\",
-      "outputPath": "D:\\Team_Project\\Gym Master\\Gym_Master\\GymMaster\\obj\\",
+      "projectPath": "D:\\ME\\pro\\cmder\\project\\Gym_Master\\GymMaster\\GymMaster.csproj",
+      "packagesPath": "C:\\Users\\HP ZBOOK G6\\.nuget\\packages\\",
+      "outputPath": "D:\\ME\\pro\\cmder\\project\\Gym_Master\\GymMaster\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Amr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\HP ZBOOK G6\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
