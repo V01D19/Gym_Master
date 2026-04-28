@@ -58,6 +58,7 @@
             // 
             Login.AutoSize = true;
             Login.Font = new Font("Bauhaus 93", 24F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            Login.ForeColor = Color.White;
             Login.Location = new Point(95, 166);
             Login.Name = "Login";
             Login.Size = new Size(114, 36);
@@ -68,6 +69,7 @@
             // panel1
             // 
             panel1.BackColor = Color.Black;
+            panel1.ForeColor = Color.White;
             panel1.Location = new Point(34, 258);
             panel1.Name = "panel1";
             panel1.Size = new Size(236, 1);
@@ -76,6 +78,7 @@
             // panel2
             // 
             panel2.BackColor = Color.Black;
+            panel2.ForeColor = Color.White;
             panel2.Location = new Point(34, 329);
             panel2.Name = "panel2";
             panel2.Size = new Size(236, 1);
@@ -101,6 +104,7 @@
             btnClear.AutoSize = true;
             btnClear.Cursor = Cursors.Hand;
             btnClear.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnClear.ForeColor = Color.White;
             btnClear.Location = new Point(226, 361);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(44, 16);
@@ -113,6 +117,7 @@
             btnExit.AutoSize = true;
             btnExit.Cursor = Cursors.Hand;
             btnExit.Font = new Font("Microsoft Sans Serif", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnExit.ForeColor = Color.White;
             btnExit.Location = new Point(140, 445);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(32, 16);
@@ -122,8 +127,10 @@
             // 
             // txtUsername
             // 
+            txtUsername.BackColor = Color.FromArgb(30, 30, 30);
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtUsername.ForeColor = Color.White;
             txtUsername.Location = new Point(67, 232);
             txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";
@@ -153,8 +160,10 @@
             // 
             // txtPassword
             // 
+            txtPassword.BackColor = Color.FromArgb(30, 30, 30);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            txtPassword.ForeColor = Color.White;
             txtPassword.Location = new Point(59, 303);
             txtPassword.Multiline = true;
             txtPassword.Name = "txtPassword";
@@ -167,7 +176,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
+            BackColor = Color.FromArgb(30, 30, 30);
             ClientSize = new Size(308, 486);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
@@ -184,6 +193,7 @@
             Name = "Login_Form";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login_Form";
+            Load += Login_Form_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

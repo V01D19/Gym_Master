@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GymMaster.Logic;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,7 +31,7 @@ namespace GymMaster.Views
             if (txtUsername.Text == "admin" && txtPassword.Text == "admin123")
             {
 
-                MainForm main = new MainForm();
+                Logic_Form  main = new Logic_Form();
                 main.Show();
                 this.Hide();
             }
@@ -58,8 +59,8 @@ namespace GymMaster.Views
         {
             if (e.KeyCode == Keys.Enter)
             {
-                txtPassword.Focus(); 
-                e.SuppressKeyPress = true; 
+                txtPassword.Focus();
+                e.SuppressKeyPress = true;
             }
         }
 
@@ -70,6 +71,11 @@ namespace GymMaster.Views
                 btnLogin.PerformClick(); // كأنك دوست بالماوس على زرار اللوجين بالظبط
                 e.SuppressKeyPress = true;
             }
+        }
+
+        private void Login_Form_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
