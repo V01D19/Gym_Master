@@ -416,3 +416,8 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+.vs/  echo [Bb]in/  echo [Oo]bj/  echo *.user 
+.vs/ 
+[Bb]in/ 
+[Oo]bj/ 
+*.user 
