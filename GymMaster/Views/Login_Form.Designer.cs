@@ -127,7 +127,7 @@
             // 
             // txtUsername
             // 
-            txtUsername.BackColor = Color.FromArgb(30, 30, 30);
+            txtUsername.BackColor = Color.FromArgb(0, 64, 64);
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtUsername.ForeColor = Color.White;
@@ -135,7 +135,7 @@
             txtUsername.Multiline = true;
             txtUsername.Name = "txtUsername";
             txtUsername.Size = new Size(220, 24);
-            txtUsername.TabIndex = 6;
+            txtUsername.TabIndex = 0;
             txtUsername.KeyDown += txtUsername_KeyDown;
             // 
             // pictureBox2
@@ -160,7 +160,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.BackColor = Color.FromArgb(30, 30, 30);
+            txtPassword.BackColor = Color.FromArgb(0, 64, 64);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtPassword.ForeColor = Color.White;
@@ -176,7 +176,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(30, 30, 30);
+            BackColor = Color.FromArgb(0, 64, 64);
             ClientSize = new Size(308, 486);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);

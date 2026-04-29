@@ -31,7 +31,7 @@ namespace GymMaster.Views
             if (txtUsername.Text == "admin" && txtPassword.Text == "admin123")
             {
 
-                Logic_Form  main = new Logic_Form();
+                Captins_Form  main = new Captins_Form();
                 main.Show();
                 this.Hide();
             }
