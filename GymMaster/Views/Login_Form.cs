@@ -31,7 +31,7 @@ namespace GymMaster.Views
             if (txtUsername.Text == "admin" && txtPassword.Text == "admin123")
             {
 
-                Captins_Form  main = new Captins_Form();
+                Search_Form  main = new Search_Form();
                 main.Show();
                 this.Hide();
             }
