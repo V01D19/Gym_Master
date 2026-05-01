@@ -5,8 +5,9 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using GymMaster.Models;
 
-namespace GymMaster.Logic
+namespace GymMaster.Views
 {
     public partial class Logic_Form : Form
     {
@@ -42,10 +43,10 @@ namespace GymMaster.Logic
             };
 
             txtName.KeyDown += MoveToNextControl;
-            txtPhone.KeyDown += MoveToNextControl;
-            txtPrice.KeyDown += MoveToNextControl;
+           
+         
 
-            this.FormClosed += (s, e) => Application.Exit();
+        
         }
 
         private void InitializeComponent()
@@ -71,11 +72,10 @@ namespace GymMaster.Logic
             // 
             // txtEndDate
             // 
-            txtEndDate.Anchor = AnchorStyles.None;
             txtEndDate.BackColor = Color.Black;
             txtEndDate.BorderStyle = BorderStyle.FixedSingle;
             txtEndDate.ForeColor = Color.Lime;
-            txtEndDate.Location = new Point(598, 201);
+            txtEndDate.Location = new Point(627, 194);
             txtEndDate.Name = "txtEndDate";
             txtEndDate.ReadOnly = true;
             txtEndDate.Size = new Size(139, 23);
@@ -84,19 +84,17 @@ namespace GymMaster.Logic
             // 
             // dtStartDate
             // 
-            dtStartDate.Anchor = AnchorStyles.None;
-            dtStartDate.Location = new Point(598, 163);
+            dtStartDate.Location = new Point(627, 156);
             dtStartDate.Name = "dtStartDate";
             dtStartDate.Size = new Size(139, 23);
             dtStartDate.TabIndex = 14;
             // 
             // lblMainTitle
             // 
-            lblMainTitle.Anchor = AnchorStyles.None;
             lblMainTitle.AutoSize = true;
             lblMainTitle.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
             lblMainTitle.ForeColor = Color.Goldenrod;
-            lblMainTitle.Location = new Point(222, 91);
+            lblMainTitle.Location = new Point(251, 84);
             lblMainTitle.Name = "lblMainTitle";
             lblMainTitle.Size = new Size(454, 32);
             lblMainTitle.TabIndex = 0;
@@ -104,10 +102,9 @@ namespace GymMaster.Logic
             // 
             // lblStartTag
             // 
-            lblStartTag.Anchor = AnchorStyles.None;
             lblStartTag.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblStartTag.ForeColor = Color.White;
-            lblStartTag.Location = new Point(439, 164);
+            lblStartTag.Location = new Point(468, 157);
             lblStartTag.Name = "lblStartTag";
             lblStartTag.Size = new Size(100, 23);
             lblStartTag.TabIndex = 1;
@@ -115,10 +112,9 @@ namespace GymMaster.Logic
             // 
             // lblEndTag
             // 
-            lblEndTag.Anchor = AnchorStyles.None;
             lblEndTag.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblEndTag.ForeColor = Color.White;
-            lblEndTag.Location = new Point(439, 201);
+            lblEndTag.Location = new Point(468, 194);
             lblEndTag.Name = "lblEndTag";
             lblEndTag.Size = new Size(100, 23);
             lblEndTag.TabIndex = 8;
@@ -126,10 +122,9 @@ namespace GymMaster.Logic
             // 
             // lblSelectType
             // 
-            lblSelectType.Anchor = AnchorStyles.None;
             lblSelectType.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblSelectType.ForeColor = Color.White;
-            lblSelectType.Location = new Point(316, 286);
+            lblSelectType.Location = new Point(345, 279);
             lblSelectType.Name = "lblSelectType";
             lblSelectType.Size = new Size(278, 37);
             lblSelectType.TabIndex = 3;
@@ -137,11 +132,10 @@ namespace GymMaster.Logic
             // 
             // btnMonth
             // 
-            btnMonth.Anchor = AnchorStyles.None;
             btnMonth.FlatStyle = FlatStyle.Flat;
             btnMonth.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnMonth.ForeColor = Color.White;
-            btnMonth.Location = new Point(288, 339);
+            btnMonth.Location = new Point(317, 332);
             btnMonth.Name = "btnMonth";
             btnMonth.Size = new Size(113, 33);
             btnMonth.TabIndex = 4;
@@ -150,11 +144,10 @@ namespace GymMaster.Logic
             // 
             // btn3Months
             // 
-            btn3Months.Anchor = AnchorStyles.None;
             btn3Months.FlatStyle = FlatStyle.Flat;
             btn3Months.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btn3Months.ForeColor = Color.White;
-            btn3Months.Location = new Point(439, 339);
+            btn3Months.Location = new Point(468, 332);
             btn3Months.Name = "btn3Months";
             btn3Months.Size = new Size(113, 33);
             btn3Months.TabIndex = 5;
@@ -163,11 +156,10 @@ namespace GymMaster.Logic
             // 
             // btn6Months
             // 
-            btn6Months.Anchor = AnchorStyles.None;
             btn6Months.FlatStyle = FlatStyle.Flat;
             btn6Months.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btn6Months.ForeColor = Color.White;
-            btn6Months.Location = new Point(288, 400);
+            btn6Months.Location = new Point(317, 393);
             btn6Months.Name = "btn6Months";
             btn6Months.Size = new Size(113, 33);
             btn6Months.TabIndex = 6;
@@ -176,11 +168,10 @@ namespace GymMaster.Logic
             // 
             // btnYear
             // 
-            btnYear.Anchor = AnchorStyles.None;
             btnYear.FlatStyle = FlatStyle.Flat;
             btnYear.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             btnYear.ForeColor = Color.White;
-            btnYear.Location = new Point(439, 400);
+            btnYear.Location = new Point(468, 393);
             btnYear.Name = "btnYear";
             btnYear.Size = new Size(113, 33);
             btnYear.TabIndex = 7;
@@ -189,11 +180,10 @@ namespace GymMaster.Logic
             // 
             // btnSubscribe
             // 
-            btnSubscribe.Anchor = AnchorStyles.None;
             btnSubscribe.BackColor = Color.Goldenrod;
             btnSubscribe.FlatStyle = FlatStyle.Flat;
             btnSubscribe.ForeColor = Color.Black;
-            btnSubscribe.Location = new Point(340, 482);
+            btnSubscribe.Location = new Point(369, 475);
             btnSubscribe.Name = "btnSubscribe";
             btnSubscribe.Size = new Size(150, 40);
             btnSubscribe.TabIndex = 10;
@@ -202,11 +192,10 @@ namespace GymMaster.Logic
             // 
             // UserName
             // 
-            UserName.Anchor = AnchorStyles.None;
             UserName.AutoSize = true;
             UserName.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             UserName.ForeColor = Color.White;
-            UserName.Location = new Point(74, 163);
+            UserName.Location = new Point(103, 156);
             UserName.Name = "UserName";
             UserName.Size = new Size(56, 21);
             UserName.TabIndex = 11;
@@ -214,22 +203,20 @@ namespace GymMaster.Logic
             // 
             // txtName
             // 
-            txtName.Anchor = AnchorStyles.None;
             txtName.BackColor = Color.FromArgb(30, 30, 30);
             txtName.BorderStyle = BorderStyle.FixedSingle;
             txtName.ForeColor = Color.White;
-            txtName.Location = new Point(222, 163);
+            txtName.Location = new Point(251, 156);
             txtName.Name = "txtName";
             txtName.Size = new Size(142, 23);
             txtName.TabIndex = 0;
             // 
             // Number
             // 
-            Number.Anchor = AnchorStyles.None;
             Number.AutoSize = true;
             Number.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             Number.ForeColor = Color.White;
-            Number.Location = new Point(74, 201);
+            Number.Location = new Point(103, 199);
             Number.Name = "Number";
             Number.Size = new Size(126, 21);
             Number.TabIndex = 11;
@@ -237,11 +224,10 @@ namespace GymMaster.Logic
             // 
             // txtPhone
             // 
-            txtPhone.Anchor = AnchorStyles.None;
             txtPhone.BackColor = Color.FromArgb(30, 30, 30);
             txtPhone.BorderStyle = BorderStyle.FixedSingle;
             txtPhone.ForeColor = Color.White;
-            txtPhone.Location = new Point(222, 199);
+            txtPhone.Location = new Point(251, 197);
             txtPhone.Name = "txtPhone";
             txtPhone.Size = new Size(142, 23);
             txtPhone.TabIndex = 1;
@@ -251,7 +237,7 @@ namespace GymMaster.Logic
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(74, 235);
+            label1.Location = new Point(103, 238);
             label1.Name = "label1";
             label1.Size = new Size(48, 21);
             label1.TabIndex = 13;
@@ -259,11 +245,10 @@ namespace GymMaster.Logic
             // 
             // txtPrice
             // 
-            txtPrice.Anchor = AnchorStyles.None;
             txtPrice.BackColor = Color.FromArgb(30, 30, 30);
             txtPrice.BorderStyle = BorderStyle.FixedSingle;
             txtPrice.ForeColor = Color.White;
-            txtPrice.Location = new Point(222, 233);
+            txtPrice.Location = new Point(251, 238);
             txtPrice.Name = "txtPrice";
             txtPrice.ReadOnly = true;
             txtPrice.Size = new Size(142, 23);
@@ -350,23 +335,32 @@ namespace GymMaster.Logic
 
             try
             {
+                Member newMember = new Member();
 
-                string record = $"{txtName.Text}|{txtPhone.Text}|{selectedSubscriptionType}|{txtPrice.Text}|{dtStartDate.Value.ToShortDateString()}|{txtEndDate.Text}";
-                string filePath = "Subscribers.txt";
-                System.IO.File.AppendAllText(filePath, record + Environment.NewLine);
-                MessageBox.Show("Member registered successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                newMember.Name = txtName.Text;
+                newMember.Phone = txtPhone.Text;
+                newMember.PlanType = selectedSubscriptionType;
+                newMember.StartDate = dtStartDate.Value;
+                newMember.EndDate = DateTime.Parse(txtEndDate.Text);
+
+                string record = $"{newMember.Name}|{newMember.Phone}|{newMember.PlanType}|{newMember.StartDate.ToShortDateString()}|{newMember.EndDate.ToShortDateString()}|{txtPrice.Text}";
+
+                System.IO.File.AppendAllText("Subscribers.txt", record + Environment.NewLine);
+                MessageBox.Show("Member added successfully");
+
                 txtName.Clear();
                 txtPhone.Clear();
-                txtPrice.Clear();
                 txtEndDate.Clear();
-                selectedSubscriptionType = "";
-
-                txtName.Focus();
+                txtPrice.Clear();
+                selectedSubscriptionType = null;
+                dtStartDate.Value = DateTime.Now;
             }
+
+
 
             catch (Exception ex)
             {
-                MessageBox.Show("Error saving data: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
 

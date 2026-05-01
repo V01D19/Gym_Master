@@ -1,4 +1,4 @@
-﻿using GymMaster.Logic;
+﻿using GymMaster.Views;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using GymMaster;
 
 namespace GymMaster.Views
 {
@@ -31,7 +32,7 @@ namespace GymMaster.Views
             if (txtUsername.Text == "admin" && txtPassword.Text == "admin123")
             {
 
-                Search_Form  main = new Search_Form();
+                DashBoard  main = new DashBoard();
                 main.Show();
                 this.Hide();
             }

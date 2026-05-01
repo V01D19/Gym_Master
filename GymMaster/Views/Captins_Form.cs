@@ -7,6 +7,8 @@ using System.Text;
 using System.Windows.Forms;
 using System.Xml.Linq;
 using System.IO;
+using GymMaster.Models;
+using GymMaster;
 
 namespace GymMaster.Views
 {
@@ -66,16 +68,27 @@ namespace GymMaster.Views
 
             try
             {
-          
-                string captainData = $"{txtName.Text}|{cmbSpecialization.SelectedItem}|{salary}|{txtPhone.Text}";
+            
+                Trainer newTrainer = new Trainer();
+
+               
+                newTrainer.Name = txtName.Text;
+                newTrainer.Specialization = cmbSpecialization.SelectedItem.ToString();
+                newTrainer.Salary = salary; 
+                newTrainer.Phone = txtPhone.Text;
+        
+                string captainData = $"{newTrainer.Name}|{newTrainer.Specialization}|{newTrainer.Salary}|{newTrainer.Phone}";
+
                 File.AppendAllLines("Captains.txt", new[] { captainData });
 
-                MessageBox.Show("Captain data saved successfully! ");
+                MessageBox.Show("Captain data saved successfully");
 
+       
                 txtName.Clear();
                 txtSalary.Clear();
                 txtPhone.Clear();
-                cmbSpecialization.SelectedIndex = 0;
+                cmbSpecialization.SelectedIndex = -1; 
+                txtName.Focus(); 
             }
             catch (Exception ex)
             {

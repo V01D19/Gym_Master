@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login_Form));
             pictureBox1 = new PictureBox();
             Login = new Label();
             panel1 = new Panel();
@@ -127,7 +128,7 @@
             // 
             // txtUsername
             // 
-            txtUsername.BackColor = Color.FromArgb(0, 64, 64);
+            txtUsername.BackColor = Color.FromArgb(45, 45, 45);
             txtUsername.BorderStyle = BorderStyle.None;
             txtUsername.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtUsername.ForeColor = Color.White;
@@ -160,7 +161,7 @@
             // 
             // txtPassword
             // 
-            txtPassword.BackColor = Color.FromArgb(0, 64, 64);
+            txtPassword.BackColor = Color.FromArgb(45, 45, 45);
             txtPassword.BorderStyle = BorderStyle.None;
             txtPassword.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
             txtPassword.ForeColor = Color.White;
@@ -176,7 +177,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(0, 64, 64);
+            BackColor = Color.FromArgb(45, 45, 45);
             ClientSize = new Size(308, 486);
             Controls.Add(txtPassword);
             Controls.Add(txtUsername);
@@ -190,6 +191,7 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             FormBorderStyle = FormBorderStyle.None;
+            Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "Login_Form";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Login_Form";

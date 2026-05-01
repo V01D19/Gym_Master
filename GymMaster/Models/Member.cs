@@ -1,13 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
 namespace GymMaster.Models
 {
-    public class Member
+    public class Member : Person
     {
-        public int Id { get; set; }
-        public string Name { get; set; }
-        public string Phone { get; set; }
-        public string PlanType { get; set; } // شهر، 3 شهور، سنة
+        public string PlanType { get; set; } 
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
     }

@@ -61,7 +61,7 @@
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label1.ForeColor = Color.White;
-            label1.Location = new Point(183, 122);
+            label1.Location = new Point(127, 115);
             label1.Name = "label1";
             label1.Size = new Size(97, 21);
             label1.TabIndex = 0;
@@ -73,7 +73,7 @@
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(183, 329);
+            label2.Location = new Point(127, 322);
             label2.Name = "label2";
             label2.Size = new Size(70, 21);
             label2.TabIndex = 0;
@@ -85,7 +85,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label3.ForeColor = Color.Goldenrod;
-            label3.Location = new Point(384, 62);
+            label3.Location = new Point(328, 55);
             label3.Name = "label3";
             label3.Size = new Size(89, 32);
             label3.TabIndex = 1;
@@ -120,7 +120,7 @@
             dgvSubscribers.DefaultCellStyle = dataGridViewCellStyle2;
             dgvSubscribers.EnableHeadersVisualStyles = false;
             dgvSubscribers.GridColor = Color.Gray;
-            dgvSubscribers.Location = new Point(183, 152);
+            dgvSubscribers.Location = new Point(127, 145);
             dgvSubscribers.MultiSelect = false;
             dgvSubscribers.Name = "dgvSubscribers";
             dgvSubscribers.ReadOnly = true;
@@ -198,7 +198,7 @@
             dataGridViewCellStyle4.WrapMode = DataGridViewTriState.False;
             dgvTrainers.DefaultCellStyle = dataGridViewCellStyle4;
             dgvTrainers.EnableHeadersVisualStyles = false;
-            dgvTrainers.Location = new Point(183, 365);
+            dgvTrainers.Location = new Point(127, 358);
             dgvTrainers.MultiSelect = false;
             dgvTrainers.Name = "dgvTrainers";
             dgvTrainers.ReadOnly = true;
@@ -241,7 +241,7 @@
             txtSearchSub.BackColor = Color.FromArgb(30, 30, 30);
             txtSearchSub.BorderStyle = BorderStyle.FixedSingle;
             txtSearchSub.ForeColor = Color.White;
-            txtSearchSub.Location = new Point(286, 120);
+            txtSearchSub.Location = new Point(230, 113);
             txtSearchSub.Name = "txtSearchSub";
             txtSearchSub.Size = new Size(268, 23);
             txtSearchSub.TabIndex = 3;
@@ -253,7 +253,7 @@
             txtSearchTrainers.BackColor = Color.FromArgb(30, 30, 30);
             txtSearchTrainers.BorderStyle = BorderStyle.FixedSingle;
             txtSearchTrainers.ForeColor = Color.White;
-            txtSearchTrainers.Location = new Point(286, 327);
+            txtSearchTrainers.Location = new Point(230, 320);
             txtSearchTrainers.Name = "txtSearchTrainers";
             txtSearchTrainers.Size = new Size(268, 23);
             txtSearchTrainers.TabIndex = 3;
@@ -265,7 +265,7 @@
             button1.BackColor = Color.Maroon;
             button1.FlatStyle = FlatStyle.Flat;
             button1.ForeColor = Color.White;
-            button1.Location = new Point(707, 123);
+            button1.Location = new Point(651, 116);
             button1.Name = "button1";
             button1.Size = new Size(75, 23);
             button1.TabIndex = 4;
@@ -279,7 +279,7 @@
             btnDeleteTrainer.BackColor = Color.Maroon;
             btnDeleteTrainer.FlatStyle = FlatStyle.Flat;
             btnDeleteTrainer.ForeColor = Color.White;
-            btnDeleteTrainer.Location = new Point(707, 336);
+            btnDeleteTrainer.Location = new Point(651, 329);
             btnDeleteTrainer.Name = "btnDeleteTrainer";
             btnDeleteTrainer.Size = new Size(75, 23);
             btnDeleteTrainer.TabIndex = 4;

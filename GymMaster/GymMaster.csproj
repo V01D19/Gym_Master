@@ -6,10 +6,16 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
+    <ApplicationIcon>imgs\dumbbells_gym_fitness_sport_icon_186993.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="imgs\dumbbells_gym_fitness_sport_icon_186993.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Services\" />
+    <Folder Include="Utilities\" />
   </ItemGroup>
 
   <ItemGroup>
