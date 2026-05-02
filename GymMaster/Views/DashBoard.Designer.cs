@@ -59,7 +59,7 @@
             btnLogout.ForeColor = Color.Goldenrod;
             btnLogout.Location = new Point(0, 544);
             btnLogout.Name = "btnLogout";
-            btnLogout.Size = new Size(141, 49);
+            btnLogout.Size = new Size(200, 49);
             btnLogout.TabIndex = 0;
             btnLogout.Text = "Logout";
             btnLogout.UseVisualStyleBackColor = false;
@@ -71,9 +71,9 @@
             btnSearch.FlatStyle = FlatStyle.Flat;
             btnSearch.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnSearch.ForeColor = Color.Goldenrod;
-            btnSearch.Location = new Point(-2, 288);
+            btnSearch.Location = new Point(-2, 469);
             btnSearch.Name = "btnSearch";
-            btnSearch.Size = new Size(199, 79);
+            btnSearch.Size = new Size(199, 71);
             btnSearch.TabIndex = 0;
             btnSearch.Text = "Search";
             btnSearch.UseVisualStyleBackColor = false;
@@ -85,7 +85,7 @@
             btnAddTrainer.FlatStyle = FlatStyle.Flat;
             btnAddTrainer.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddTrainer.ForeColor = Color.Goldenrod;
-            btnAddTrainer.Location = new Point(-2, 155);
+            btnAddTrainer.Location = new Point(-2, 86);
             btnAddTrainer.Name = "btnAddTrainer";
             btnAddTrainer.Size = new Size(199, 79);
             btnAddTrainer.TabIndex = 0;
@@ -99,7 +99,7 @@
             btnAddMember.FlatStyle = FlatStyle.Flat;
             btnAddMember.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
             btnAddMember.ForeColor = Color.Goldenrod;
-            btnAddMember.Location = new Point(-2, 25);
+            btnAddMember.Location = new Point(-2, 5);
             btnAddMember.Name = "btnAddMember";
             btnAddMember.Size = new Size(199, 79);
             btnAddMember.TabIndex = 0;
