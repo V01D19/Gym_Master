@@ -4,7 +4,11 @@ using System.Text;
 
 namespace GymMaster.Models
 {
-    internal class Enums
+    public enum SubscriptionPlan
     {
+        OneMonth,
+        ThreeMonths,
+        SixMonths,
+        FullYear
     }
 }

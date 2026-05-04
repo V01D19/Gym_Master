@@ -1,24 +1,26 @@
 ﻿using System;
+using System.IO;
 
 namespace GymMaster.Models
 {
-   
     public class Member : Person
     {
-        public string? PlanType { get; set; }
+      
+        public SubscriptionPlan PlanType { get; set; }
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public decimal Price { get; set; }
 
-
         public override string GetRecordString()
         {
-            return $"{Name}|{Phone}|{PlanType}|{StartDate.ToShortDateString()}|{EndDate.ToShortDateString()}|{Price}";
+           
+            return $"{Name}|{Phone}|{PlanType.ToString()}|{StartDate.ToShortDateString()}|{EndDate.ToShortDateString()}|{Price}";
         }
 
-        public override string GetDisplayInfo()
+        public void SaveToFile()
         {
-            return $"{base.GetDisplayInfo()} | Plan: {PlanType} | Expires: {EndDate.ToShortDateString()}";
+            string record = GetRecordString();
+            File.AppendAllText("Subscribers.txt", record + Environment.NewLine);
         }
     }
 }
