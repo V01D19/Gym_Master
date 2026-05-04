@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+using System.IO;
 using System.Windows.Forms;
-using GymMaster;
 
 namespace GymMaster.Views
 {
@@ -27,11 +23,8 @@ namespace GymMaster.Views
                 foreach (string line in lines)
                 {
                     string[] data = line.Split('|');
-
                     if (data.Length == 4)
-                    {
                         dgvTrainers.Rows.Add(data[0], data[1], data[2], data[3]);
-                    }
                 }
             }
         }
@@ -47,11 +40,8 @@ namespace GymMaster.Views
                 foreach (string line in lines)
                 {
                     string[] data = line.Split('|');
-
                     if (data.Length == 6)
-                    {
                         dgvSubscribers.Rows.Add(data[0], data[1], data[2], data[3], data[4], data[5]);
-                    }
                 }
             }
         }
@@ -60,34 +50,31 @@ namespace GymMaster.Views
         {
             LoadTrainersData();
             LoadSubscribersData();
-
             dgvSubscribers.ClearSelection();
             dgvTrainers.ClearSelection();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (dgvSubscribers.SelectedRows.Count > 0)
+            if (dgvSubscribers.SelectedRows.Count == 0)
             {
-                DialogResult result = MessageBox.Show("Are you sure you want to delete this subscriber?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
-                {
-                    foreach (DataGridViewRow row in dgvSubscribers.SelectedRows)
-                    {
-                        if (!row.IsNewRow) dgvSubscribers.Rows.Remove(row);
-                    }
-
-                    UpdateSubscribersFile();
-
-                    MessageBox.Show("Subscriber deleted successfully!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                MessageBox.Show("Please select a full row to delete.", "Selection Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            if (MessageBox.Show("Are you sure you want to delete this subscriber?", "Confirmation",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                MessageBox.Show("Please select a full row to delete.", "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                foreach (DataGridViewRow row in dgvSubscribers.SelectedRows)
+                    if (!row.IsNewRow) dgvSubscribers.Rows.Remove(row);
+
+                UpdateSubscribersFile();
+                MessageBox.Show("Subscriber deleted successfully!", "Done",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
         private void UpdateSubscribersFile()
         {
             try
@@ -98,10 +85,11 @@ namespace GymMaster.Views
                 {
                     if (!row.IsNewRow && row.Cells[0].Value != null)
                     {
-                        string line = $"{row.Cells[0].Value}|{row.Cells[1].Value}|{row.Cells[2].Value}|{row.Cells[3].Value}|{row.Cells[4].Value}|{row.Cells[5].Value}";
-                        lines.Add(line);
+                        lines.Add($"{row.Cells[0].Value}|{row.Cells[1].Value}|{row.Cells[2].Value}|" +
+                                  $"{row.Cells[3].Value}|{row.Cells[4].Value}|{row.Cells[5].Value}");
                     }
                 }
+
                 File.WriteAllLines("Subscribers.txt", lines);
             }
             catch (Exception ex)
@@ -121,45 +109,32 @@ namespace GymMaster.Views
                 {
                     if (!row.IsNewRow && row.Cells[0].Value != null)
                     {
-                        if (row.Cells[0].Value.ToString().ToLower().Contains(searchValue))
-                        {
-                            row.Visible = true;
-                        }
-                        else
-                        {
-                            dgvSubscribers.CurrentCell = null;
-                            row.Visible = false;
-                        }
+                        row.Visible = row.Cells[0].Value.ToString().ToLower().Contains(searchValue);
+                        if (!row.Visible) dgvSubscribers.CurrentCell = null;
                     }
                 }
             }
-            catch (Exception)
-            {
-
-            }
+            catch { }
         }
 
         private void btnDeleteTrainer_Click(object sender, EventArgs e)
         {
-            if (dgvTrainers.SelectedRows.Count > 0)
+            if (dgvTrainers.SelectedRows.Count == 0)
             {
-                DialogResult result = MessageBox.Show("Are you sure you want to delete this trainer?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-
-                if (result == DialogResult.Yes)
-                {
-                    foreach (DataGridViewRow row in dgvTrainers.SelectedRows)
-                    {
-                        if (!row.IsNewRow) dgvTrainers.Rows.Remove(row);
-                    }
-
-                    UpdateTrainersFile();
-
-                    MessageBox.Show("Trainer deleted successfully!", "Done", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
+                MessageBox.Show("Please select a trainer row to delete.", "Selection Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
-            else
+
+            if (MessageBox.Show("Are you sure you want to delete this trainer?", "Confirmation",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
             {
-                MessageBox.Show("Please select a trainer row to delete.", "Selection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                foreach (DataGridViewRow row in dgvTrainers.SelectedRows)
+                    if (!row.IsNewRow) dgvTrainers.Rows.Remove(row);
+
+                UpdateTrainersFile();
+                MessageBox.Show("Trainer deleted successfully!", "Done",
+                    MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 
@@ -173,8 +148,8 @@ namespace GymMaster.Views
                 {
                     if (!row.IsNewRow && row.Cells[0].Value != null)
                     {
-                        string line = $"{row.Cells[0].Value}|{row.Cells[1].Value}|{row.Cells[2].Value}|{row.Cells[3].Value}";
-                        lines.Add(line);
+                        lines.Add($"{row.Cells[0].Value}|{row.Cells[1].Value}|" +
+                                  $"{row.Cells[2].Value}|{row.Cells[3].Value}");
                     }
                 }
 
@@ -196,25 +171,13 @@ namespace GymMaster.Views
                 {
                     if (!row.IsNewRow && row.Cells[0].Value != null)
                     {
-                        string trainerName = row.Cells[0].Value.ToString().ToLower();
-
-                        if (trainerName.Contains(searchValue))
-                        {
-                            row.Visible = true; 
-                        }
-                        else
-                        {
-                            dgvTrainers.CurrentCell = null;
-                            row.Visible = false;
-                        }
+                        bool visible = row.Cells[0].Value.ToString().ToLower().Contains(searchValue);
+                        row.Visible = visible;
+                        if (!visible) dgvTrainers.CurrentCell = null;
                     }
                 }
             }
-            catch (Exception)
-            {
-
-            }
+            catch { }
         }
     }
-
 }

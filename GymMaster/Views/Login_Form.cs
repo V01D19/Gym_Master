@@ -1,12 +1,6 @@
-﻿using GymMaster.Views;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Text;
+﻿using System;
 using System.Windows.Forms;
-using GymMaster;
+using GymMaster.Models;
 
 namespace GymMaster.Views
 {
@@ -17,28 +11,28 @@ namespace GymMaster.Views
             InitializeComponent();
         }
 
-        private void UserName_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(txtUsername.Text) || string.IsNullOrEmpty(txtPassword.Text))
             {
-                MessageBox.Show("Please enter both username and password!", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Please enter both username and password!", "Input Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
-            if (txtUsername.Text == "admin" && txtPassword.Text == "admin123")
-            {
 
-                DashBoard  main = new DashBoard();
+            // Encapsulation 
+            AuthManager auth = new AuthManager();
+
+            if (auth.Login(txtUsername.Text, txtPassword.Text))
+            {
+                DashBoard main = new DashBoard();
                 main.Show();
                 this.Hide();
             }
             else
             {
-                MessageBox.Show("Invalid Username or Password!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Invalid Username or Password!", "Login Failed",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
                 txtPassword.Clear();
                 txtPassword.Focus();
             }
@@ -58,25 +52,14 @@ namespace GymMaster.Views
 
         private void txtUsername_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                txtPassword.Focus();
-                e.SuppressKeyPress = true;
-            }
+            if (e.KeyCode == Keys.Enter) { txtPassword.Focus(); e.SuppressKeyPress = true; }
         }
 
         private void txtPassword_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                btnLogin.PerformClick(); // كأنك دوست بالماوس على زرار اللوجين بالظبط
-                e.SuppressKeyPress = true;
-            }
+            if (e.KeyCode == Keys.Enter) { btnLogin.PerformClick(); e.SuppressKeyPress = true; }
         }
 
-        private void Login_Form_Load(object sender, EventArgs e)
-        {
-
-        }
+        private void Login_Form_Load(object sender, EventArgs e) { }
     }
 }

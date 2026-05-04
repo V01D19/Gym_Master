@@ -65,7 +65,7 @@
             Login.Size = new Size(114, 36);
             Login.TabIndex = 1;
             Login.Text = "LOG IN";
-            Login.Click += UserName_Click;
+            Login.Click += btnLogin_Click;
             // 
             // panel1
             // 
