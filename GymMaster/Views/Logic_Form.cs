@@ -19,7 +19,9 @@ namespace GymMaster.Views
 
             InitializeComponent();
 
-       
+            btnSubscribe.Click += btnSubscribe_Click;
+
+
             txtName.KeyPress += new KeyPressEventHandler(txtName_KeyPress);
             txtPhone.MaxLength = 11;
             txtPhone.KeyPress += new KeyPressEventHandler(txtPhone_KeyPress);
